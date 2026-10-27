@@ -183,7 +183,7 @@ export default function HRDashboard({ user, onLogout }) {
 
     try {
       await api.put(
-        `/api/candidate-rankings/${candidateId}/${jobId}/decision`,
+        `/candidate-rankings/${candidateId}/${jobId}/decision`,
         { approval_status: status }
       );
 
